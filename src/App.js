@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Background from "./components/Background";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 const Layout = styled.div``;
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Slide>
         <Slide>
           <Experience />
+        </Slide>
+        <Slide>
+          <Contact />
         </Slide>
       </FullPage>
     </Layout>
