@@ -13,13 +13,13 @@ function App() {
       <Background />
       <FullPage>
         <Slide>
-          <Experience />
-        </Slide>
-        <Slide>
           <Header />
         </Slide>
         <Slide>
           <Services />
+        </Slide>
+        <Slide>
+          <Experience />
         </Slide>
       </FullPage>
     </Layout>
