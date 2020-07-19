@@ -13,6 +13,8 @@ import {
   Rect4,
   Rect5,
   Rect6,
+  Graph1bg,
+  Graph2bg,
 } from "./index.style";
 const Background = () => {
   return (
@@ -39,6 +41,8 @@ const Background = () => {
           <Rect6 />
         </BottomRightRectsContainerInner>
       </BottomRightRectsContainer>
+      <Graph1bg />
+      <Graph2bg />
     </Wrapper>
   );
 };
