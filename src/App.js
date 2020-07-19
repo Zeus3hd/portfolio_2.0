@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import { FullPage, Slide } from "react-full-page";
 import styled from "styled-components";
 import Background from "./components/Background";
-
+import Services from "./components/Services";
 const Layout = styled.div``;
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Header />
         </Slide>
         <Slide>
-          <Header />
+          <Services />
         </Slide>
       </FullPage>
     </Layout>
