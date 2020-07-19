@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
+import graph1 from "../../imgs/graph1bg.png";
+import graph2 from "../../imgs/graph2bg.png";
 export const Wrapper = styled.div`
   position: fixed;
   left: 0;
@@ -107,4 +109,26 @@ export const Rect6 = styled.div`
   position: absolute;
   left: 4%;
   bottom: 0%;
+`;
+
+export const Graph1bg = styled.div`
+  background: url(${graph1}) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
+`;
+
+export const Graph2bg = styled.div`
+  background: url(${graph2}) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
 `;
