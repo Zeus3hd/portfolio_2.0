@@ -6,41 +6,67 @@ export const Wrapper = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 export const Title = styled.h2`
   font-size: 4rem;
   color: ${colors.dark};
   align-self: center;
+  @media (max-width: 900px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SectionsContainer = styled.div`
   display: flex;
   margin: 3rem;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const LeftSection = styled.div`
   flex: 1;
+  @media (max-width: 900px) {
+    flex: auto;
+  }
 `;
 
 export const RightSection = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  @media (max-width: 900px) {
+    flex: auto;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-size: 2rem;
   color: ${colors.dark};
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
 `;
 export const SocialContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
 export const SocialInfo = styled.div`
   display: flex;
+  align-items: center;
 `;
 export const SocialText = styled.p`
   color: ${colors.dark};
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const WhatsAppWrapper = styled.svg`
@@ -151,6 +177,11 @@ export const Form = styled.form`
   border-radius: 0.3rem;
   width: 100%;
   max-width: 300px;
+  text-align: left;
+  @media (max-width: 900px) {
+    width: 80vw;
+    max-width: 100%;
+  }
 `;
 export const InputGroup = styled.div`
   display: flex;

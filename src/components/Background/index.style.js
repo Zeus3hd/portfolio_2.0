@@ -11,6 +11,9 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   z-index: -2;
+  @media (max-width: 900px) {
+    opacity: 0.1;
+  }
 `;
 
 export const TopRightRect = styled.div`

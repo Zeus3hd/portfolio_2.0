@@ -50,6 +50,9 @@ export const CodeContainer = styled.div`
   font-size: 5rem;
   font-weight: bold;
   font-family: "Ubuntu";
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -65,6 +68,9 @@ export const LogoContainer = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  @media (max-width: 700px) {
+    height: 2rem;
   }
 `;
 export const Logo = styled.img`
