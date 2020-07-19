@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   bottom: 0;
   width: 100%;
   height: 100%;
+  z-index: -2;
 `;
 
 export const TopRightRect = styled.div`
