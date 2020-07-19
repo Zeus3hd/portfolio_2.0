@@ -34,14 +34,7 @@ export const LeftSection = styled.div`
   }
 `;
 
-export const RightSection = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  @media (max-width: 900px) {
-    flex: auto;
-  }
-`;
+export const RightSection = styled.div``;
 
 export const Paragraph = styled.p`
   font-size: 2rem;
@@ -187,6 +180,9 @@ export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
+  @media (max-width: 600px) {
+    margin: 0.5rem 0;
+  }
 `;
 export const Label = styled.label`
   color: ${colors.red};
