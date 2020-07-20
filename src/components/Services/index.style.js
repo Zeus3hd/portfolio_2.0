@@ -5,44 +5,52 @@ export const Wrapper = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 `;
 
 export const Title = styled.h2`
-  font-size: 4rem;
   color: ${colors.dark};
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export const ServicesContainer = styled.div`
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
 export const SingleServiceContainer = styled.div`
   flex: 1;
-  margin: 2rem 4rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr;
+    margin: 3rem;
+    align-items: end;
+    max-width: 400px;
+  }
 `;
 
-export const ServiceImg = styled.div`
-  background: url(${({ bg }) => bg}) no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 30vw;
-  height: 30vw;
-  max-width: 300px;
-  max-height: 300px;
+export const ServiceImg = styled.img`
+  width: 100%;
+  object-fit: contain;
 `;
 export const ServiceTitle = styled.p`
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: ${colors.dark};
   margin: 0;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid ${colors.green};
   position: relative;
-
   ::before {
     content: "";
     position: absolute;
@@ -51,13 +59,31 @@ export const ServiceTitle = styled.p`
     background: ${colors.green};
     z-index: -1;
     top: 40%;
-    right: 0%;
+    left: 40%;
     transform: translateY(-50%);
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.3rem;
   }
 `;
 export const ServiceDesc = styled.div``;
 
 export const ServiceParagraph = styled.p`
   color: ${colors.dark};
-  margin: 0.5rem 0;
+`;
+
+export const ServiceInfoContainer = styled.div`
+  flex: 2;
+  margin-left: 0.5rem;
+  p:last-child {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    p:last-child {
+      display: block;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;

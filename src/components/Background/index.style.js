@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   z-index: -2;
+  opacity: 0.2;
+  @media (min-width: 600px) {
+    opacity: 1;
+  }
 `;
 
 export const TopRightRect = styled.div`

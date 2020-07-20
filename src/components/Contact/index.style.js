@@ -6,31 +6,48 @@ export const Wrapper = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  @media (min-width: 1440px) {
+    padding: 0 10vw;
+  }
 `;
 export const Title = styled.h2`
-  font-size: 4rem;
   color: ${colors.dark};
-  align-self: center;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const SectionsContainer = styled.div`
   display: flex;
-  margin: 3rem;
+  flex-direction: column;
+  padding: 1rem;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const LeftSection = styled.div`
   flex: 1;
+  @media (min-width: 768px) {
+    margin-right: 2rem;
+  }
+  @media (min-width: 1024px) {
+    flex: 2;
+  }
 `;
 
 export const RightSection = styled.div`
   flex: 1;
-  display: flex;
-  justify-content: center;
 `;
 
 export const Paragraph = styled.p`
-  font-size: 2rem;
   color: ${colors.dark};
+  font-weight: bold;
+  @media (min-width: 1024px) {
+    max-width: 60ch;
+  }
 `;
 export const SocialContainer = styled.div`
   display: grid;
@@ -38,6 +55,9 @@ export const SocialContainer = styled.div`
 `;
 export const SocialInfo = styled.div`
   display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: bold;
 `;
 export const SocialText = styled.p`
   color: ${colors.dark};
@@ -145,24 +165,22 @@ export const Twitter = () => (
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   background: #ffffff;
+  padding: 1rem;
+  box-sizing: border-box;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
-  width: 100%;
-  max-width: 300px;
 `;
 export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 `;
 export const Label = styled.label`
   color: ${colors.red};
-  margin-bottom: 0.5rem;
 `;
 export const InputField = styled.input`
-  padding: 0.7rem 0.5rem;
+  padding: 0.5rem;
   border: 1px solid ${colors.red};
   border-radius: 0.3rem;
 `;
@@ -173,13 +191,11 @@ export const TextArea = styled.textarea`
   resize: none;
 `;
 export const FormButton = styled.button`
-  border: none;
   background: ${colors.red};
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  height: 2.5rem;
-  width: 7rem;
   color: #ffffff;
   font-weight: bold;
-  font-size: 1.2rem;
+  border: none;
   align-self: center;
+  padding: 0.5rem 1rem;
 `;

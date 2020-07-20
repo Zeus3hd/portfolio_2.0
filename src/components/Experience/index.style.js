@@ -6,46 +6,64 @@ export const Wrapper = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  @media (min-width: 768px) {
+    padding: 0 10vw;
+  }
 `;
 export const Title = styled.h2`
-  font-size: 4rem;
   color: ${colors.dark};
+  text-align: center;
+  margin: 1rem 0;
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const SubTitle = styled.h5`
-  font-size: 2rem;
   color: ${colors.dark};
-  margin: 0;
+  text-align: center;
+  margin: 1rem 0;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ExpContainer = styled.div`
-  align-self: flex-start;
-  margin: 1rem 10vw;
+  padding: 1rem;
 `;
-export const SingleExpContainer = styled.div``;
+export const SingleExpContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
 
 export const ExpTitle = styled.p`
-  font-size: 2rem;
   color: ${colors.dark};
-  margin: 0;
   font-weight: bold;
   position: relative;
+  margin: 0;
   ::before {
     content: "";
-    width: 40%;
+    width: 100%;
     height: 100%;
+    left: -15%;
     position: absolute;
-    left: -10%;
-    top: 0;
     background: ${colors.green};
     z-index: -1;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 
 export const TechContainer = styled.p`
+  font-size: 0.95rem;
   color: ${colors.dark};
-  font-weight: bold;
+  line-height: 1.3rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Slash = styled.span`

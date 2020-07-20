@@ -12,7 +12,7 @@ function App() {
   return (
     <Layout>
       <Background />
-      <FullPage>
+      <FullPage controls>
         <Slide>
           <Header />
         </Slide>

@@ -40,20 +40,22 @@ export const ScrollSVG = () => (
 export const Wrapper = styled.header`
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 `;
 
 export const CodeContainer = styled.div`
-  font-size: 5rem;
-  font-weight: bold;
-  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: 800;
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 
 export const LogoContainer = styled.div`
-  height: 6rem;
+  height: 2rem;
   position: relative;
   ::before {
     content: "";
@@ -66,26 +68,31 @@ export const LogoContainer = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  @media (min-width: 768px) {
+    height: 4rem;
+  }
 `;
 export const Logo = styled.img`
   height: 100%;
 `;
 export const FirstLine = styled.div`
+  margin: 1rem 0;
   display: flex;
   align-items: center;
-  margin: 1rem 0;
   color: ${colors.dark};
   > span {
     color: ${colors.red};
   }
 `;
 export const SecondLine = styled.p`
-  color: ${colors.dark};
   margin: 1rem 0;
-  margin-left: 4rem;
+  color: ${colors.green};
+  margin-left: 1rem;
+  @media (min-width: 768px) {
+    margin-left: 2.5rem;
+  }
 `;
 export const ThirdLine = styled.p`
-  color: ${colors.dark};
   margin: 1rem 0;
-  margin-left: 2.5rem;
+  color: ${colors.dark};
 `;
