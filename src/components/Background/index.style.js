@@ -41,6 +41,9 @@ export const TopLeftRectsContainer = styled.div`
   position: absolute;
   left: 0;
   top: 0;
+  @media (max-width: 500px) {
+    width: 50%;
+  }
 `;
 export const TopLeftRectsContainerInner = styled.div`
   width: 100%;
@@ -54,6 +57,9 @@ export const BottomRightRectsContainer = styled.div`
   right: 0;
   bottom: 0;
   transform: rotateZ(180deg);
+  @media (max-width: 500px) {
+    width: 50%;
+  }
 `;
 export const BottomRightRectsContainerInner = styled.div``;
 export const Rect1 = styled.div`
