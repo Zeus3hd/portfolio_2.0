@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cd node_modules/react-full-page && npm install es6.object.assign && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
