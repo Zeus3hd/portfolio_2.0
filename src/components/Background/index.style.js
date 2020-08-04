@@ -70,6 +70,11 @@ export const Rect1 = styled.div`
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   right: 0%;
   top: 30%;
+  transition: 0.5s;
+  transform: ${({ startAnim }) =>
+    startAnim
+      ? "translateX(0%) rotateZ(-45deg)"
+      : "translateX(100%) rotateZ(45deg)"};
 `;
 
 export const Rect2 = styled.div`
@@ -80,6 +85,9 @@ export const Rect2 = styled.div`
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   right: 25%;
   bottom: 10%;
+  transition: 0.5s;
+  transform: ${({ startAnim }) =>
+    startAnim ? "translateX(0%)" : "translateX(100%)"};
 `;
 
 export const Rect3 = styled.div`
@@ -90,6 +98,9 @@ export const Rect3 = styled.div`
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   right: 30%;
   top: 10%;
+  transition: 0.5s;
+  transform: ${({ startAnim }) =>
+    startAnim ? "translateX(0%)" : "translateX(100%)"};
 `;
 
 export const Rect4 = styled.div`
@@ -100,6 +111,11 @@ export const Rect4 = styled.div`
   position: absolute;
   left: 30%;
   bottom: 10%;
+  transition: 0.5s;
+  transform: ${({ startAnim }) =>
+    startAnim
+      ? "translateX(0%) rotateZ(0deg) scale(3)"
+      : "translateX(100%) rotateZ(45deg) scale(1)"};
 `;
 
 export const Rect5 = styled.div`
@@ -110,6 +126,9 @@ export const Rect5 = styled.div`
   position: absolute;
   left: 20%;
   top: 10%;
+  transition: 0.5s;
+  transform: ${({ startAnim }) =>
+    startAnim ? "translateX(0%)" : "translateX(100%)"};
 `;
 
 export const Rect6 = styled.div`
@@ -120,6 +139,9 @@ export const Rect6 = styled.div`
   position: absolute;
   left: 4%;
   bottom: 0%;
+  transition: 0.5s;
+  transform: ${({ startAnim }) =>
+    startAnim ? "translateX(0%)" : "translateX(100%)"};
 `;
 
 export const Graph1bg = styled.div`

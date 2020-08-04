@@ -14,6 +14,7 @@ export const Title = styled.h2`
   font-size: 2.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 `;
 
 export const ServicesContainer = styled.div`
@@ -51,6 +52,8 @@ export const ServiceTitle = styled.p`
   padding-bottom: 0.5rem;
   border-bottom: 3px solid ${colors.green};
   position: relative;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
   ::before {
     content: "";
     position: absolute;
@@ -70,6 +73,7 @@ export const ServiceDesc = styled.div``;
 
 export const ServiceParagraph = styled.p`
   color: ${colors.dark};
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 `;
 
 export const ServiceInfoContainer = styled.div`

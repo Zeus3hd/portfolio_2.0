@@ -6,20 +6,24 @@ import {
   LeftSection,
   RightSection,
   Paragraph,
-  SocialContainer,
-  SocialInfo,
-  WhatsApp,
-  SocialText,
-  Gmail,
-  Facebook,
-  Twitter,
   Form,
   InputGroup,
   Label,
   InputField,
   TextArea,
   FormButton,
+  SocialContainer,
+  SocialLinksContainer,
+  SocialLink,
+  SocialText,
 } from "./index.style";
+import FacebookIcon from "../../static/FacebookIcon.svg";
+import InstagramIcon from "../../static/InstagramIcon.svg";
+import TwitterIcon from "../../static/TwitterIcon.svg";
+import EmailIcon from "../../static/EmailIcon.svg";
+import LinkedIcon from "../../static/LinkedIcon.svg";
+import ResumeIcon from "../../static/ResumeIcon.svg";
+
 const Contact = () => {
   return (
     <Wrapper>
@@ -31,22 +35,27 @@ const Contact = () => {
             following links or the contact form
           </Paragraph>
           <SocialContainer>
-            <SocialInfo>
-              <WhatsApp />
-              <SocialText>+90 531 900 65 30</SocialText>
-            </SocialInfo>
-            <SocialInfo>
-              <Gmail />
-              <SocialText>ahdhani0@gmail.com</SocialText>
-            </SocialInfo>
-            <SocialInfo>
-              <Facebook />
-              <SocialText>/3hdhani</SocialText>
-            </SocialInfo>
-            <SocialInfo>
-              <Twitter />
-              <SocialText>@AhdHani_js</SocialText>
-            </SocialInfo>
+            <SocialLinksContainer>
+              <SocialLink href="https://www.facebook.com/3hdhani">
+                <FacebookIcon />
+              </SocialLink>
+              <SocialLink href="https://twitter.com/AhdHani_js">
+                <TwitterIcon />
+              </SocialLink>
+              <SocialLink href="https://www.instagram.com/AhdHani_Dev/">
+                <InstagramIcon />
+              </SocialLink>
+              <SocialLink href="mailto:ahdhani0@gmail.com">
+                <EmailIcon />
+              </SocialLink>
+              <SocialLink href="https://www.linkedin.com/in/ahdradwan/">
+                <LinkedIcon />
+              </SocialLink>
+              <SocialLink href="https://docs.google.com/document/d/e/2PACX-1vQYZTL_UdqBG68IrTW29-gu8pTq0q0y1iCxm_ulThXbXqCtWcLk64xzhLW4YJ2FicSIDcOROBtIimqq/pub">
+                <ResumeIcon />
+              </SocialLink>
+            </SocialLinksContainer>
+            <SocialText>@ahdhani</SocialText>
           </SocialContainer>
         </LeftSection>
         <RightSection>

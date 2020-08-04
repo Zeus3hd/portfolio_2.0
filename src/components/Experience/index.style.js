@@ -14,6 +14,8 @@ export const Wrapper = styled.section`
 export const Title = styled.h2`
   color: ${colors.dark};
   text-align: center;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
   margin: 1rem 0;
   @media (min-width: 768px) {
     font-size: 3rem;
@@ -23,6 +25,8 @@ export const Title = styled.h2`
 export const SubTitle = styled.h5`
   color: ${colors.dark};
   text-align: center;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
   margin: 1rem 0;
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -43,6 +47,8 @@ export const ExpTitle = styled.p`
   font-weight: bold;
   position: relative;
   margin: 0;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
   ::before {
     content: "";
     width: 100%;
@@ -61,6 +67,8 @@ export const TechContainer = styled.p`
   font-size: 0.95rem;
   color: ${colors.dark};
   line-height: 1.3rem;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
   @media (min-width: 768px) {
     font-size: 1rem;
   }

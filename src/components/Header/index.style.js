@@ -5,13 +5,20 @@ import { colors } from "../../utils/colors";
 const ScrollSVGContent = styled.svg`
   position: absolute;
   bottom: 1rem;
-  width: 2rem;
+  width: 1.5rem;
+  animation: animScroll 1s infinite ease-in-out alternate-reverse;
+  @keyframes animScroll {
+    from {
+      transform: translateY(-10%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 `;
 
 export const ScrollSVG = () => (
   <ScrollSVGContent
-    width="50"
-    height="85"
     viewBox="0 0 50 85"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +51,8 @@ export const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
+  transform: ${({ startAnim }) => (startAnim ? "scale(1)" : "scale(0)")};
 `;
 
 export const CodeContainer = styled.div`
@@ -83,6 +92,7 @@ export const FirstLine = styled.div`
   > span {
     color: ${colors.red};
   }
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 `;
 export const SecondLine = styled.p`
   margin: 1rem 0;
@@ -91,8 +101,10 @@ export const SecondLine = styled.p`
   @media (min-width: 768px) {
     margin-left: 2.5rem;
   }
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 `;
 export const ThirdLine = styled.p`
   margin: 1rem 0;
   color: ${colors.dark};
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 `;
